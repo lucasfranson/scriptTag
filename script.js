@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
 	let response = fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query: '{ shop { name } }' }),
+    body: JSON.stringify( '{ shop { name } }' ),
   })
 	.then((resp) => resp.json())
 	.then(function(data) {	
