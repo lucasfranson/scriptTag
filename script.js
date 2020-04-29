@@ -1,7 +1,6 @@
 jQuery(document).ready(function() {
   let url = 'https://testezarbo.myshopify.com/api/2020-04/graphql';
 	let response = fetch(url, {
-    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query: '{ shop { name } }' }),
   })
 	.then((resp) => resp.json())
