@@ -3,8 +3,7 @@
     let response = fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 
-                  'X-Shopify-Storefront-Access-Token': '777174f29c084240dbede11722a7b9d9-1588166489' },
-      body: JSON.stringify( '{ shop { name } }' ),
+      body: JSON.stringify( '{publicApiVersions{displayName}}' ),
     })
     .then((resp) => resp.json())
     .then(function(data) {	
