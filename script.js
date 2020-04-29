@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-      let url = 'https://testezarbo.myshopify.com/api/2020-04/graphql.json';
+      let url = 'https://testezarbo.myshopify.com/api/2020-04/graphql';
       let response = fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
