@@ -1,10 +1,6 @@
 jQuery(document).ready(function() {
-      let url = 'https://testezarbo.myshopify.com/api/2020-04/graphql.json';
-      let response = fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify( '{ shop { name } }' ),
-      })
+      let url = 'https://testezarbo.myshopify.com/cart.json';
+      let response = fetch(url)
       .then((resp) => resp.json())
       .then(function(data) {	
         console.log(data);
